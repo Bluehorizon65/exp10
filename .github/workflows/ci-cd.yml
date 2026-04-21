@@ -3,7 +3,7 @@ jobs:
  b:
   runs-on: ubuntu-latest
   steps:
-   - uses: actions/@checkoutv4
+   - uses: actions/checkout@v4
    - run: |
       pip install pytest
       pytest test_app.py -v
