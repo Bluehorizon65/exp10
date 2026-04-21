@@ -1,0 +1,9 @@
+on: push
+jobs:
+ b:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/@checkoutv4
+   - run: |
+      pip install pytest
+      pytest test_app.py -v
